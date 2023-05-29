@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Alfa Slab One', cursive;
+    background-color: darkslategray;
+}
+
+h1{
+    font-weight: lighter;
+    color: rgb(205, 197, 197);
+}
+
+button, select{
+    padding: 5px 10px 5px 10px;
+    border: 5px solid darkslategray;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: 'Alfa Slab One', cursive;
+    cursor: pointer;
+    color: darkslategray;
+    background-color: rgb(205, 197, 197);
+}
+
+select option{
+    font-family: 'Alfa Slab One', cursive;
+}
+
+header{
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(64, 83, 83);
+}
+
+main{
+    margin: 3rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid{
+    height: 800px;
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell{
+  
+    border: 2px solid darkslategray;
+    font-size: 15px;
+    color: rgb(64, 83, 83);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(205, 197, 197);
+}
+
+.clicked{
+    box-shadow: 0 0 3px 6px inset rgb(182, 211, 211);
+    background-color: rgb(202, 216, 216);
+}
