@@ -90,6 +90,15 @@ button.addEventListener('click', function()
                                     this.classList.add('bomb-clicked');
                                     gameOver = true;
                                     alert(`Hai perso. Il tuo punteggio è: ${score}`);
+                                    let bombsCells= document.getElementById('grid').children
+                                    for(let i=0; i<bombsCells.length; i++)
+                                    {
+                                        let numberContained = parseInt(bombsCells[i].innerText);
+                                        if(arrayBombs.includes(numberContained))
+                                        {
+                                            bombsCells[i].classList.add('bomb-clicked');
+                                        }
+                                    }
                                    
                                 } else if (!cell.classList.contains('clicked'))
                                 {
@@ -99,6 +108,15 @@ button.addEventListener('click', function()
                                     {
                                         gameOver = true;
                                         alert('Complimenti! Hai vinto. Non hai cliccato su nessuna bomba!');
+                                        let bombsCells= document.getElementById('grid').children
+                                        for(let i=0; i<bombsCells.length; i++)
+                                        {
+                                            let numberContained = parseInt(bombsCells[i].innerText);
+                                            if(arrayBombs.includes(numberContained))
+                                            {
+                                                bombsCells[i].classList.add('bomb-clicked');
+                                            }
+                                        }
                                     }
                                     
                                 }
