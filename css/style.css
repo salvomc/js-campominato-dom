@@ -54,7 +54,6 @@ main{
 }
 
 .cell{
-  
     border: 2px solid darkslategray;
     font-size: 15px;
     color: rgb(64, 83, 83);
@@ -67,4 +66,8 @@ main{
 .clicked{
     box-shadow: 0 0 3px 6px inset rgb(182, 211, 211);
     background-color: rgb(202, 216, 216);
+}
+
+.bomb-clicked{
+    box-shadow: 0 0 3px 6px inset rgb(163, 41, 0);
 }
